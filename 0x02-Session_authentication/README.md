@@ -335,7 +335,7 @@ bob@dylan:~$
 Update `api/v1/auth/auth.py` by adding the method `def session_cookie(self, request=None):` that returns a cookie value from a request:
 
 * Return `None` if `request` is `None`
-* Return the value of the cookie named `\_my_session_id` from `request` - the name of the cookie must be defined by the environment variable `SESSION_NAME`
+* Return the value of the cookie named `_my_session_id` from `request` - the name of the cookie must be defined by the environment variable `SESSION_NAME`
 You must use `.get()` built-in for accessing the cookie in the request cookies dictionary
 * You must use the environment variable `SESSION_NAME` to define the name of the cookie used for the Session ID
 In the first terminal:
@@ -703,8 +703,8 @@ Now, after getting a Session ID, you can request all protected API routes by usi
 
 **Repo:**
 
-* GitHub repository: alx-backend-user-data
-* Directory: 0x02-Session_authentication
+* GitHub repository: `alx-backend-user-data`
+* Directory: `0x02-Session_authentication`
 * File: `api/v1/auth/session_auth.py, api/v1/views/session_auth.py`
 
 ### 9. Expiration?
